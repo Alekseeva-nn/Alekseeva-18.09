@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEEEC20C26F5BF4000DAE26C /* recept WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEEEC20B26F5BF4000DAE26C /* recept WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEEEC21226F5BF4000DAE26C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEEC21026F5BF4000DAE26C /* Interface.storyboard */; };
+		CEEEC21426F5BF4100DAE26C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEEC21326F5BF4100DAE26C /* Assets.xcassets */; };
+		CEEEC21B26F5BF4100DAE26C /* recept WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEEEC21A26F5BF4100DAE26C /* recept WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEEEC22026F5BF4100DAE26C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEC21F26F5BF4100DAE26C /* InterfaceController.swift */; };
+		CEEEC22226F5BF4100DAE26C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEC22126F5BF4100DAE26C /* ExtensionDelegate.swift */; };
+		CEEEC22426F5BF4100DAE26C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEC22326F5BF4100DAE26C /* NotificationController.swift */; };
+		CEEEC22626F5BF4100DAE26C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEC22526F5BF4100DAE26C /* ComplicationController.swift */; };
+		CEEEC22826F5BF4200DAE26C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEEC22726F5BF4200DAE26C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEEEC20D26F5BF4000DAE26C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEEC20126F5BF4000DAE26C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEEC20A26F5BF4000DAE26C;
+			remoteInfo = "recept WatchKit App";
+		};
+		CEEEC21C26F5BF4100DAE26C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEEC20126F5BF4000DAE26C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEEC21926F5BF4100DAE26C;
+			remoteInfo = "recept WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEEEC23026F5BF4200DAE26C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEEEC21B26F5BF4100DAE26C /* recept WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEEC23426F5BF4200DAE26C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CEEEC20C26F5BF4000DAE26C /* recept WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CEEEC20726F5BF4000DAE26C /* recept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recept.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEEC20B26F5BF4000DAE26C /* recept WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recept WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEEC21126F5BF4000DAE26C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CEEEC21326F5BF4100DAE26C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEEC21526F5BF4100DAE26C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEEC21A26F5BF4100DAE26C /* recept WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "recept WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEEC21F26F5BF4100DAE26C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CEEEC22126F5BF4100DAE26C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CEEEC22326F5BF4100DAE26C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CEEEC22526F5BF4100DAE26C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CEEEC22726F5BF4200DAE26C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEEC22926F5BF4200DAE26C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEEC22A26F5BF4200DAE26C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEEEC21726F5BF4100DAE26C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEEEC20026F5BF4000DAE26C = {
+			isa = PBXGroup;
+			children = (
+				CEEEC20F26F5BF4000DAE26C /* recept WatchKit App */,
+				CEEEC21E26F5BF4100DAE26C /* recept WatchKit Extension */,
+				CEEEC20826F5BF4000DAE26C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEEEC20826F5BF4000DAE26C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEEC20726F5BF4000DAE26C /* recept.app */,
+				CEEEC20B26F5BF4000DAE26C /* recept WatchKit App.app */,
+				CEEEC21A26F5BF4100DAE26C /* recept WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEEC20F26F5BF4000DAE26C /* recept WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CEEEC21026F5BF4000DAE26C /* Interface.storyboard */,
+				CEEEC21326F5BF4100DAE26C /* Assets.xcassets */,
+				CEEEC21526F5BF4100DAE26C /* Info.plist */,
+			);
+			path = "recept WatchKit App";
+			sourceTree = "<group>";
+		};
+		CEEEC21E26F5BF4100DAE26C /* recept WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CEEEC21F26F5BF4100DAE26C /* InterfaceController.swift */,
+				CEEEC22126F5BF4100DAE26C /* ExtensionDelegate.swift */,
+				CEEEC22326F5BF4100DAE26C /* NotificationController.swift */,
+				CEEEC22526F5BF4100DAE26C /* ComplicationController.swift */,
+				CEEEC22726F5BF4200DAE26C /* Assets.xcassets */,
+				CEEEC22926F5BF4200DAE26C /* Info.plist */,
+				CEEEC22A26F5BF4200DAE26C /* PushNotificationPayload.apns */,
+			);
+			path = "recept WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEEEC20626F5BF4000DAE26C /* recept */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEEC23526F5BF4200DAE26C /* Build configuration list for PBXNativeTarget "recept" */;
+			buildPhases = (
+				CEEEC20526F5BF4000DAE26C /* Resources */,
+				CEEEC23426F5BF4200DAE26C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEEC20E26F5BF4000DAE26C /* PBXTargetDependency */,
+			);
+			name = recept;
+			productName = recept;
+			productReference = CEEEC20726F5BF4000DAE26C /* recept.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		CEEEC20A26F5BF4000DAE26C /* recept WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEEC23126F5BF4200DAE26C /* Build configuration list for PBXNativeTarget "recept WatchKit App" */;
+			buildPhases = (
+				CEEEC20926F5BF4000DAE26C /* Resources */,
+				CEEEC23026F5BF4200DAE26C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEEC21D26F5BF4100DAE26C /* PBXTargetDependency */,
+			);
+			name = "recept WatchKit App";
+			productName = "recept WatchKit App";
+			productReference = CEEEC20B26F5BF4000DAE26C /* recept WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CEEEC21926F5BF4100DAE26C /* recept WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEEC22D26F5BF4200DAE26C /* Build configuration list for PBXNativeTarget "recept WatchKit Extension" */;
+			buildPhases = (
+				CEEEC21626F5BF4100DAE26C /* Sources */,
+				CEEEC21726F5BF4100DAE26C /* Frameworks */,
+				CEEEC21826F5BF4100DAE26C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "recept WatchKit Extension";
+			productName = "recept WatchKit Extension";
+			productReference = CEEEC21A26F5BF4100DAE26C /* recept WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEEEC20126F5BF4000DAE26C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CEEEC20626F5BF4000DAE26C = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					CEEEC20A26F5BF4000DAE26C = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					CEEEC21926F5BF4100DAE26C = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = CEEEC20426F5BF4000DAE26C /* Build configuration list for PBXProject "recept" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEEEC20026F5BF4000DAE26C;
+			productRefGroup = CEEEC20826F5BF4000DAE26C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEEEC20626F5BF4000DAE26C /* recept */,
+				CEEEC20A26F5BF4000DAE26C /* recept WatchKit App */,
+				CEEEC21926F5BF4100DAE26C /* recept WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEEEC20526F5BF4000DAE26C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEEC20926F5BF4000DAE26C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEEC21426F5BF4100DAE26C /* Assets.xcassets in Resources */,
+				CEEEC21226F5BF4000DAE26C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEEC21826F5BF4100DAE26C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEEC22826F5BF4200DAE26C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEEEC21626F5BF4100DAE26C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEEC22426F5BF4100DAE26C /* NotificationController.swift in Sources */,
+				CEEEC22626F5BF4100DAE26C /* ComplicationController.swift in Sources */,
+				CEEEC22226F5BF4100DAE26C /* ExtensionDelegate.swift in Sources */,
+				CEEEC22026F5BF4100DAE26C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEEEC20E26F5BF4000DAE26C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEEC20A26F5BF4000DAE26C /* recept WatchKit App */;
+			targetProxy = CEEEC20D26F5BF4000DAE26C /* PBXContainerItemProxy */;
+		};
+		CEEEC21D26F5BF4100DAE26C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEEC21926F5BF4100DAE26C /* recept WatchKit Extension */;
+			targetProxy = CEEEC21C26F5BF4100DAE26C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEEEC21026F5BF4000DAE26C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEEC21126F5BF4000DAE26C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEEEC22B26F5BF4200DAE26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEEEC22C26F5BF4200DAE26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEEEC22E26F5BF4200DAE26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "recept WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ekk.recept.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		CEEEC22F26F5BF4200DAE26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "recept WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ekk.recept.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		CEEEC23226F5BF4200DAE26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = recept_WatchKit_Extension;
+				INFOPLIST_FILE = "recept WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ekk.recept.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		CEEEC23326F5BF4200DAE26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = recept_WatchKit_Extension;
+				INFOPLIST_FILE = "recept WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ekk.recept.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		CEEEC23626F5BF4200DAE26C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ekk.recept;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CEEEC23726F5BF4200DAE26C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ekk.recept;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEEEC20426F5BF4000DAE26C /* Build configuration list for PBXProject "recept" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEEC22B26F5BF4200DAE26C /* Debug */,
+				CEEEC22C26F5BF4200DAE26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEEC22D26F5BF4200DAE26C /* Build configuration list for PBXNativeTarget "recept WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEEC22E26F5BF4200DAE26C /* Debug */,
+				CEEEC22F26F5BF4200DAE26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEEC23126F5BF4200DAE26C /* Build configuration list for PBXNativeTarget "recept WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEEC23226F5BF4200DAE26C /* Debug */,
+				CEEEC23326F5BF4200DAE26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEEC23526F5BF4200DAE26C /* Build configuration list for PBXNativeTarget "recept" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEEC23626F5BF4200DAE26C /* Debug */,
+				CEEEC23726F5BF4200DAE26C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEEEC20126F5BF4000DAE26C /* Project object */;
+}
