@@ -1,47 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="logo" id="fOA-St-WYq"/>
+                        <label alignment="center" verticalAlignment="center" text="CookBook" id="YfG-G7-ayk">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <segue destination="n8W-KI-Jzo" kind="relationship" relationship="nextPage" id="ixT-J9-yZf"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <!--Table Interface Controller-->
+        <scene sceneID="ywT-EG-wGo">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller id="n8W-KI-Jzo" customClass="TableInterfaceController" customModule="recept_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                        <table alignment="left" id="YdJ-gI-4nE">
+                            <items>
+                                <tableRow identifier="row" id="FAJ-Nh-RiG" customClass="TableRow" customModule="recept_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="c8o-eI-Lzn">
+                                        <items>
+                                            <imageView width="30" height="30" alignment="left" verticalAlignment="center" image="sun.max" catalog="system" id="Hmk-Av-1ZV"/>
+                                            <label width="1" alignment="left" verticalAlignment="center" text="receptName" numberOfLines="2" id="dL9-3Q-uHP"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="recipeIcon" destination="Hmk-Av-1ZV" id="XZZ-S1-8OG"/>
+                                        <outlet property="recipeName" destination="dL9-3Q-uHP" id="uTX-n6-Ah5"/>
+                                        <segue destination="lU8-Uq-Hzg" kind="push" id="yJC-yH-3lF"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
-                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                        <outlet property="table" destination="YdJ-gI-4nE" id="PUU-6Q-dJ3"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="450" y="345"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--Detail Interface Controller-->
+        <scene sceneID="ZCs-kF-nxP">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="lU8-Uq-Hzg" customClass="DetailInterfaceController" customModule="recept_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="100" alignment="left" id="k70-HD-Vsz">
+                            <items>
+                                <imageView width="30" height="30" alignment="center" image="cloud.moon.rain" catalog="system" id="6oV-qE-4VE"/>
+                                <label height="20" alignment="center" verticalAlignment="center" text="name" id="sKn-7p-Fds"/>
+                            </items>
+                        </group>
+                        <imageView width="150" height="150" alignment="center" id="Pqa-1T-hGf"/>
+                        <button alignment="left" id="dpp-fw-iMx">
+                            <group key="contentGroup" width="1" alignment="left" layout="vertical" id="AhO-nD-JFP">
+                                <items>
+                                    <label alignment="center" text="Label" id="ESP-aL-BmC"/>
+                                    <label alignment="center" verticalAlignment="bottom" text="Label" id="fVT-wL-JoT"/>
+                                </items>
+                            </group>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="icon" destination="6oV-qE-4VE" id="m8Y-y6-CpD"/>
+                        <outlet property="image" destination="Pqa-1T-hGf" id="bxT-Pb-zH7"/>
+                        <outlet property="name" destination="sKn-7p-Fds" id="jAR-Ms-bu9"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="Niz-AI-uX2">
-            <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="681.47826086956513" y="344.55357142857144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cloud.moon.rain" catalog="system" width="128" height="125"/>
+        <image name="logo" width="96" height="96"/>
+        <image name="sun.max" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

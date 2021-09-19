@@ -11,11 +11,14 @@
 		CEEEC21226F5BF4000DAE26C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEEC21026F5BF4000DAE26C /* Interface.storyboard */; };
 		CEEEC21426F5BF4100DAE26C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEEC21326F5BF4100DAE26C /* Assets.xcassets */; };
 		CEEEC21B26F5BF4100DAE26C /* recept WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEEEC21A26F5BF4100DAE26C /* recept WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		CEEEC22026F5BF4100DAE26C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEC21F26F5BF4100DAE26C /* InterfaceController.swift */; };
+		CEEEC22026F5BF4100DAE26C /* TableInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEC21F26F5BF4100DAE26C /* TableInterfaceController.swift */; };
 		CEEEC22226F5BF4100DAE26C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEC22126F5BF4100DAE26C /* ExtensionDelegate.swift */; };
 		CEEEC22426F5BF4100DAE26C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEC22326F5BF4100DAE26C /* NotificationController.swift */; };
 		CEEEC22626F5BF4100DAE26C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEC22526F5BF4100DAE26C /* ComplicationController.swift */; };
 		CEEEC22826F5BF4200DAE26C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEEC22726F5BF4200DAE26C /* Assets.xcassets */; };
+		CEEEC23926F5EDCB00DAE26C /* recepts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEC23826F5E50A00DAE26C /* recepts.swift */; };
+		CEEEC23B26F6011500DAE26C /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEC23A26F6011500DAE26C /* TableRow.swift */; };
+		CEEEC23D26F6103D00DAE26C /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEC23C26F6103D00DAE26C /* DetailInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,13 +70,16 @@
 		CEEEC21326F5BF4100DAE26C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEEC21526F5BF4100DAE26C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEEC21A26F5BF4100DAE26C /* recept WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "recept WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEEEC21F26F5BF4100DAE26C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CEEEC21F26F5BF4100DAE26C /* TableInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableInterfaceController.swift; sourceTree = "<group>"; };
 		CEEEC22126F5BF4100DAE26C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		CEEEC22326F5BF4100DAE26C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		CEEEC22526F5BF4100DAE26C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		CEEEC22726F5BF4200DAE26C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEEC22926F5BF4200DAE26C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEEC22A26F5BF4200DAE26C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CEEEC23826F5E50A00DAE26C /* recepts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recepts.swift; sourceTree = "<group>"; };
+		CEEEC23A26F6011500DAE26C /* TableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
+		CEEEC23C26F6103D00DAE26C /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEEC21026F5BF4000DAE26C /* Interface.storyboard */,
+				CEEEC23C26F6103D00DAE26C /* DetailInterfaceController.swift */,
 				CEEEC21326F5BF4100DAE26C /* Assets.xcassets */,
 				CEEEC21526F5BF4100DAE26C /* Info.plist */,
 			);
@@ -119,7 +126,9 @@
 		CEEEC21E26F5BF4100DAE26C /* recept WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CEEEC21F26F5BF4100DAE26C /* InterfaceController.swift */,
+				CEEEC21F26F5BF4100DAE26C /* TableInterfaceController.swift */,
+				CEEEC23A26F6011500DAE26C /* TableRow.swift */,
+				CEEEC23826F5E50A00DAE26C /* recepts.swift */,
 				CEEEC22126F5BF4100DAE26C /* ExtensionDelegate.swift */,
 				CEEEC22326F5BF4100DAE26C /* NotificationController.swift */,
 				CEEEC22526F5BF4100DAE26C /* ComplicationController.swift */,
@@ -259,7 +268,10 @@
 				CEEEC22426F5BF4100DAE26C /* NotificationController.swift in Sources */,
 				CEEEC22626F5BF4100DAE26C /* ComplicationController.swift in Sources */,
 				CEEEC22226F5BF4100DAE26C /* ExtensionDelegate.swift in Sources */,
-				CEEEC22026F5BF4100DAE26C /* InterfaceController.swift in Sources */,
+				CEEEC22026F5BF4100DAE26C /* TableInterfaceController.swift in Sources */,
+				CEEEC23926F5EDCB00DAE26C /* recepts.swift in Sources */,
+				CEEEC23B26F6011500DAE26C /* TableRow.swift in Sources */,
+				CEEEC23D26F6103D00DAE26C /* DetailInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
